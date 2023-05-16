@@ -17,7 +17,7 @@ with open('predict_pipeline.pkl','rb') as f:
 app = FastAPI()
 @app.get("/")
 async def root():
-    return {"greeting":"Hello world"}
+    return {"greeting":""}
 
 @app.get("/data/")
 async def clasiify(age: int,
